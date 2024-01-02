@@ -1,0 +1,349 @@
+/* MAIN BODY */
+
+.homePageContainer {
+    user-select: none;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+}
+
+/* HEADER */
+
+.headerSection{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.headerMainContainer{
+    width: 85%;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,.05), 0 8px 40px rgba(0,0,0,.04), 0 0 2px rgba(0,0,0,.15);
+}
+
+.headerLeftSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.headerCompanyLogo{
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+}
+
+.headerItemList{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.headerIndividualListItem{
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    color: #777;
+}
+
+.headerIndividualListItem:hover{
+    color: #000;
+}
+
+.headerRightSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.headerSignupButton{
+    background-color: #111;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 300ms ease-in-out;
+}
+
+.headerLoginButton{
+    font-size: 16px;
+    font-weight: 418;
+    letter-spacing: 0.01em;
+    line-height: 1.5;
+    color: rgb(30, 35, 48);
+    background-color: rgb(239, 240, 236);
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    font-weight: 600;
+    transition: all 300ms ease-in-out;
+}
+
+.headerSignupButton:hover, .headerLoginButton:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+
+/* HOME PAGE CONTENT SECTION */
+
+.homePageContentSection{
+    flex-grow: 1;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.heroTitleLarge{
+    width: 60%;
+    text-align: center;
+    background: #000;
+    background-color: #000;
+    background-image: radial-gradient(circle,#c058ff 0,#ff5858 26%,#000 27%);
+    background-position: 100% 100%;
+    background-size: 150%;
+    -webkit-animation-name: bg-circle;
+    animation-name: bg-circle;
+    -webkit-animation-duration: 10s;
+    animation-duration: 6s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+@keyframes bg-circle {
+    0% {
+        background-size: 350%;
+        background-position: left 100% bottom 0;
+    }
+    50% {
+        background-size: 350%;
+        background-position: left -10% bottom 0;
+    }
+    100% {
+        background-size: 350%;
+        background-position: left 100% bottom 0;
+    }
+}
+
+.submitFormSection{
+    min-width: 25%;
+    height: 3rem;
+    background: linear-gradient(.351turn,#ff5858 23.71%,#c058ff 78.8%);
+    background-size: 165%;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    overflow: hidden;
+    display: flex;
+    transition: all 200ms ease-in-out;
+}
+
+.submitFormSection:hover{
+    -webkit-animation-name: bg-anim;
+    animation-name: bg-anim;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.linkStartContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.linkStartText{
+    padding-left: 24px;
+    text-align: left;
+    line-height: 17px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.inputUserProfile{
+    outline: none;
+    width: 80px;
+    background: #fff;
+    height: 3rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    writing-mode: horizontal-tb !important;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+@media (min-width: 600px){
+.inputUserProfile {
+    width: 150px;
+}
+}
+
+.inputSubmitButton{
+    background: transparent!important;
+    background-image: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inputSubmitButtonText{
+    background:transparent !important;
+    background-image: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.homePageButton {
+    padding: 1.4rem 8rem;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .25s ease-in-out;
+    background: linear-gradient(112.44deg, #ff5858 2.09%, #c058ff 75.22%);
+    background-size: 165%;
+    animation-name: bg-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    font-size: 1.2rem;
+}
+
+@keyframes bg-anim {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.smallDetails{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #777;
+    font-weight: 500;
+}
+
+
+/* FOOTER SECTION */
+
+.footerSection{
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.footerHorizontalBar{
+    width: 80%;
+}
+
+.footerIconsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.footerStoreIcon{
+    width: 10rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.footerListSection{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.footerListItem{
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #888;
+    transition: all 250ms ease-in-out;
+}
+
+.footerListItem:hover{
+    color: #444;
+}
+
+.footerSocialContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footerFontIcon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #444;
+    transition: all 300ms ease-in-out;
+}
+
+.footerFontIcon:hover{
+    transform: scale(1.09);
+}
