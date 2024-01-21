@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import css from "../../assets/css/HomePage/HomePage.module.css"
 import CompanyLogo from "../../assets/images/companyLogo.avif"
 import GooglePlayLogo from "../../assets/images/googleplay.png"
@@ -8,6 +9,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faTwitter, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const handleSignup = () => {
+        navigate('/signup');
+    }
+
+    const handleLogin = () => {
+        navigate('/login');
+    }
+
     return (
         <>
             <div className={css.homePageContainer}>
@@ -24,8 +35,8 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className={css.headerRightSection}>
-                            <button className={css.headerLoginButton}>Login</button>
-                            <button className={css.headerSignupButton}>Sign Up</button>
+                            <button className={css.headerLoginButton} onClick={handleLogin}>Login</button>
+                            <button className={css.headerSignupButton} onClick={handleSignup}>Sign Up</button>
                         </div>
                     </div>
                 </div>
